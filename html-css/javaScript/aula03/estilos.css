@@ -1,0 +1,21 @@
+form{
+    width: 50%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+input{
+    margin-top: 10px;
+    
+}
+
+#botao_alterar,
+#botao_excluir,
+#botao_cancelar{
+    display: none   ;
+}
+
+.table{
+    width: 60%;
+    margin: 5% auto;
+}

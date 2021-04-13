@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função JavaScript</title>
+
+    <script>
+        // funcao 01
+        function mensagem() {
+            alert("Testando mensagem javaScript");
+        }
+
+
+        // funcao 02
+
+       function obterElemento(elemento) {
+           alert(elemento.innerHTML);
+           elemento.innerHTML = "Você já clicou aqui!!"
+           elemento.style = "color: red";
+       }
+
+       function fundo(codigo) {
+           switch(parseInt (codigo)){
+            case 1:
+                document.getElementsByTagName("body")[0].style = "Background-color: blue";
+            break;
+            case 2:
+                document.getElementsByTagName("body")[0].style = "Background-color: green";
+            break;
+            case 3:
+                document.getElementsByTagName("body")[0].style = "Background-color: white";
+            break;
+            case 4:
+                document.getElementsByTagName("body")[0].style = "Background-color: red";
+            break;
+           }
+       }
+
+       function teclado(valor) {
+           document.getElementsByTagName("p")[0].innerHTML = valor;
+       }
+
+    </script>
+
+</head>
+<body>
+        <button onclick="mensagem()">Clique aqui</button>
+
+        <h1 onclick="obterElemento(this)">Bom dia 06/04/2021</h1>
+
+
+        <select onchange="fundo (this.value)">
+            <option value="0">Escolha uma cor</option>
+            <option onclick="" value="1">Azul</option>
+            <option onclick="" value="2">Verde</option>
+            <option onclick="" value="3">Branco</option>
+            <option onclick="" value="4">Vermelho</option>
+        </select>
+
+        <p></p>
+        <input type="text" onkeypress="teclado(this.value)">
+
+</body>
+</html>

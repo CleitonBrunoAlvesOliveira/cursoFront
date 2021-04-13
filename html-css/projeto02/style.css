@@ -1,0 +1,127 @@
+@font-face {
+    font-family:Bronx Bystreets;
+    src: url(Bronx\ Bystreets.ttf);
+  }
+@font-face {
+    font-family:Wargate-Normal;
+    src: url(Wargate-Normal.ttf);
+  }
+
+*{
+margin: 0px;
+padding: 0px;
+font: 16px verdana;
+}
+
+body{
+    background-image: url(imagens/banner.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.nav{
+    color: white;
+    background-color:#FFB612;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.nav p {
+    padding: 8px;
+    color: rgb(71, 70, 70);
+}
+
+.nav p b{
+    font-weight: bold;
+}
+.menu{
+    overflow: auto;
+    background-color:#000000;
+    width: 100%;
+    text-align: right;
+    height: 100px;
+    
+    
+}
+
+.menu h1{
+    font-family: Bronx Bystreets;
+    float: left;
+    color: white;
+    font-size: 48px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.menu nav{
+    margin-top: 40px;
+}
+
+.menu a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 30px;
+    
+}
+
+.menu a:hover{
+    color:#FFB612 ;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.main{
+    width: 100%;
+    height: 70px;
+    background-color:#FFB612;
+    text-align: center;
+    margin-top: 800px;
+   
+}
+
+.main h2{
+    padding: 19px;
+    color: rgb(145, 145, 145);
+    font-size: 24px;
+    font-style: italic;
+    letter-spacing: 4px;
+    
+}
+.treinamentos{
+    padding: 20px auto;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    background-color:#202020;
+}
+.treinamentos h2{
+    color: white;
+    font-size: 36px;
+    padding: 20px;
+    font-family: Wargate-Normal;
+
+}
+
+.treinamentos img{
+    width: 600px;
+}
+
+.instrutores{
+    text-align: center;
+    background-color: #202020;
+    color: white;
+
+}
+
+.instrutores h2{
+    font-size: 36px;
+
+}
+.instrutores img{
+    width: 600px;
+}
+
+

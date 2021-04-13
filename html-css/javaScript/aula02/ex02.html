@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor menor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+        <style>
+            form{
+                width: 40%;
+                margin: 10pc auto;
+            }
+
+            input{
+                margin-top: 15px;
+            }
+        </style>
+
+
+        <script>
+            function numeroMenor() {
+                
+                var n1 = document.getElementById("n1");
+                var n2 = document.getElementById("n2");
+                var n3 = document.getElementById("n3");
+
+                var alerta = document.getElementById("alerta");
+
+
+                console.log(n1.value);
+                console.log(n2.value);
+                console.log(n3.value);
+
+
+                if(n1.value == ""){
+                    alerta.innerText = "O valor 1 precisa ser informado";
+                    alerta.classList.add("alert", "alert-danger");
+                    n1.focus();
+                }else if(n2.value == ""){
+                    alerta.innerText = "O valor 2 precisa ser informado";
+                    alerta.classList.add("alert", "alert-danger");
+                    n2.focus();
+                }else if(n3.value == ""){
+                    alerta.innerText = "O valor 3 precisa ser informado";
+                    alerta.classList.add("alert", "alert-danger");
+                    n3.focus();
+                }else if (n1.value < n2.value && n1.value < n3.value) {
+                    alerta.innerHTML = "O menor valor informado foi " + n1.value;
+                    alerta.classList.add("alert" , "alert-success");                    
+                }else if (n2.value < n1.value && n2.value < n3.value) {
+                    alerta.innerHTML = "O menor valor informado foi " + n2.value;
+                    alerta.classList.add("alert" , "alert-success"); 
+                }else {
+                    alerta.innerHTML = "O menor valor informado foi " + n3.value;
+                    alerta.classList.add("alert" , "alert-success");              
+                } 
+                
+    
+                return false;
+            
+
+               
+            }
+
+
+        </script>
+
+</head>
+<body>
+    
+    <div>
+        <form onsubmit="return numeroMenor()">
+            <h1>Retorna Menor Valor Digitado</h1>
+            <div id="alerta"></div>
+            <input type="number" placeholder="Digite o primeiro numero" class="form-control" id="n1">
+            <input type="number" placeholder="Digite o segundo numero" class="form-control" id="n2">
+            <input type="number" placeholder="Digite o terceiro numero" class="form-control" id="n3">
+            <input type="submit" value="Retornar Menor Valor" class="bnt btn-primary" id="btn" onsubmit="return resultado()">
+        </form>
+    </div>
+
+
+</body>
+</html>

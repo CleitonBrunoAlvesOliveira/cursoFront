@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font: verdana;
+}
+
+.carousel-item img{
+    height: 1300px;
+} 
+
+
+    @media screen and (max-width: 600px){
+        .carousel-item img{
+            height: 400px;
+        }
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 900px){
+        .carousel-item img{
+            height: 900px;
+        }
+    }
+
+    @media screen and (min-width: 1300px){
+        .carousel-item img{
+            height: 1200px;
+        }
+    }
+
+    .cursos{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .cursos img{
+        margin-top: 20px;
+    }
+
+    .cursos h1{
+        border-bottom: solid 3px black ;
+        padding-bottom: 8px;
+    }
+
+    
+
+    .modalPopup h1{
+        border-bottom: solid 2px rgb(88, 3, 3);
+    }
+
+    .professores{
+        text-align: center;
+    }
+
+    .professores h1{
+        border-bottom: solid 3px black ;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+    }
+
+    .footer{
+            background-color: #212529;
+            height: 50px;
+            margin-top: 50px;
+        }
+    .footer{
+        text-align: center;
+        color: white;
+        padding-top: 10px;
+    }
+
+    /*  css contact page */
+
+    .contato{
+        text-align: center;
+    }
+   .contato h1{
+       border-bottom: 2px solid #212529;
+       padding: 50px;
+       margin-bottom: 50px;
+   }

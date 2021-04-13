@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+
+    <script>
+
+        function acao(botao) {
+
+            if(botao.innerHTML =="Ligar"){
+                document.getElementById("lampada").src = "lampada-acesa.jpg";
+                botao.innerHTML = "Desligar";
+            }else{
+                document.getElementById("lampada").src = "lampada-apagada.jpg";
+                botao.innerHTML = "Ligar";
+            }
+
+        }
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <img src="lampada-apagada.jpg" id="lampada">
+    <button onclick="acao(this)">Ligar</button>
+
+
+</body>
+
+</html>

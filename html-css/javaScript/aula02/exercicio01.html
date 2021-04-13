@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- estilo -->
+    <style>
+        form {
+            width: 40%;
+            margin: 10px auto;
+        }
+
+        input {
+            margin-top: 10px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        
+    </style>
+
+    <script>
+      
+        // obter valores do usuario
+
+        function calcular() {
+            
+       
+        var nome = document.getElementById("nome");
+        var nota1 = document.getElementById("nota1");
+        var nota2 =document.getElementById("nota2");
+
+        // teste
+        console.log(nome.value);
+        console.log(nota1.value);
+        console.log(nota2.value);
+
+        // obter elemnto alerta
+
+        var alerta = document.getElementById("alerta");
+
+
+        // validacoes 
+
+       /* if(nome.value == ""){
+            alert("favor preencher o campo nome");
+            nome.focus();
+        }else if(nota1.value == ""){
+            alert("preencher a nota 1");
+            nota1.focus();
+        } */
+
+        if(nome.value == ""){
+            alerta.innerText = "O campo nome precisa ser preenchido";
+            alerta.classList.add("alert", "alert-danger");
+            nome.focus;
+        }else if(nome.value.length < 3){
+            alerta.innerText = "Informe um nome valido";
+            alerta.classList.add("alert", "alert-danger");
+            nome.focus();
+        }else if(nota1.value == ""){
+            alerta.innerText = "O campo precisa ser preenchido";
+            alerta.classList.add("alert", "alert-danger");
+            nota1.focus();
+        }else if(nota2.value == ""){
+            alerta.innerText = "O campo precisa ser preenchido";
+            alerta.classList.add("alert", "alert-danger");
+            nota2.focus();
+        }else{
+        alerta.innerText = "o aluno " + nome.value + "obteve a media " + (parseInt(nota1.value) + parseInt(nota2.value) / 2);
+        alerta.classList.add("alert", "alert-success");
+        }
+
+        // condicional
+        var media = (parseInt(nota1.value) + parseInt(nota2.value)) / 2;
+
+        // remover cor 
+
+        alerta.classList.remove("alert-success", "alert-danger")
+        
+        if(media >= 7){
+            alerta.innerText = nome.value + " você não é burro.. Foi aprovado com a media " + media;
+            alerta.classList.add("alert", "alert-success");
+        
+    }else{
+            alerta.innerText = nome.value + " você não foi inteligente o sufuciente para ser aprovado sua media foi " + media;
+            alerta.classList.add("alert", "alert-danger");
+
+    }
+
+        // evitar atualização
+
+        return false; 
+    }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="return calcular()">
+        <h1>Calcular Nota Média</h1>
+        <div id="alerta"></div>
+        <input type="text" placeholder="informe o nome" class="form-control" id="nome" minlength="3">
+        <input type="number" placeholder="informe a primeira nota" class="form-control" id="nota1">
+        <input type="number" placeholder="informe a segunda nota" class="form-control" id="nota2">
+        <input type="submit" placeholder="Enviar" class="btn btn-primary">
+    </form>
+</body>
+
+</html>

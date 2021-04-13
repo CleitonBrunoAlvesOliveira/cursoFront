@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mobile.css" media="(max-width: 600px)">
+    <link rel="stylesheet" href="tablet.css" media="(min-width: 601px) and (max-width:900px)">
+    <link rel="stylesheet" href="desktop.css" media="(min-width: 901px)">
+    
+    <!-- jQuery 1.8 or later, 33 KB -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Fotorama from CDNJS, 19 KB -->
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+
+<body>
+    <div class="estrutura">
+
+    <header>
+        <img src="imagens/logo.webp" alt="" srcset="">
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Destinos</a>
+            <a href="#">Blog</a>
+            <a href="#">Contato</a>
+        </nav>
+
+        <select name="Menu" id="">
+            <option value="">Menu</option>
+            <option class="option" value="">Inicio</option>
+            <option class="option" value="">Sobre</option>
+            <option class="option" value="">Destinos</option>
+            <option class="option" value="">Blog</option>
+            <option class="option" value="">Contato</option>
+        </select>
+    </header>
+    <main>
+        <section class="fotorama" data-transition="crossfade" data-autoplay="3000" data-loop="true">
+            <img src="imagens/banner/1.webp" alt="">
+            <img src="imagens/banner/2.webp" alt="">
+            <img src="imagens/banner/3.webp" alt="">
+        </section>
+        <section class="destinos">
+
+            <div class="col-desktop-4 col-tablet-6  col-mobile-12">
+                <div class="borda">
+                <img src="imagens/destinos/1.webp" alt="" srcset="">
+                <h1>São Francisco</h1>
+            </div>
+            </div>
+            <div class="col-desktop-4 col-tablet-6 col-mobile-12">
+                <div class="borda">
+                <img src="imagens/destinos/2.webp" alt="" srcset="">
+                <h1>Ilha Bela</h1>
+            </div>
+            </div>
+            <div class="col-desktop-4 col-tablet-6 col-mobile-12">
+                <div class="borda">
+                <img src="imagens/destinos/3.webp" alt="" srcset="">
+                <h1>Londres</h1>
+            </div>
+            </div>
+            <div class="col-desktop-4 col-tablet-6 col-mobile-12">
+                <div class="borda">
+                <img src="imagens/destinos/4.webp" alt="" srcset="">
+                <h1>Cancún</h1>
+            </div>
+            </div>
+            <div class="col-desktop-4 col-tablet-6 col-mobile-12">
+                <div class="borda">
+                <img src="imagens/destinos/5.webp" alt="" srcset="">
+                <h1>Grécia</h1>
+            </div>
+            </div>
+            <div class="col-desktop-4 col-tablet-6 col-mobile-12">
+                <div class="borda">
+                <img src="imagens/destinos/6.webp" alt="" srcset="">
+                <h1>Bahamas</h1>
+            </div>
+            
+        </section>
+    </main>
+    <footer  class="footer">
+        <p>Desenvolvido por Bruno Oliveira - 2021</p>
+
+    </footer>
+</div>
+</body>
+
+</html>

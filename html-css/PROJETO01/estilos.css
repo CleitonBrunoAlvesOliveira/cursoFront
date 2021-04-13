@@ -1,0 +1,208 @@
+/* Padronizar tags */
+
+*{
+    font: 14px sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: fontFarm;
+    src: url('Western Bang Bang.otf');
+  }
+
+body{
+    background-image: url(imagens/banner_primario.jpeg);
+    background-repeat: no-repeat;
+   background-size: 100%;
+}
+/* topo e links */
+header{
+    background-color: rgba(255, 255, 255, 0.6);
+    overflow: auto;
+}
+header h1{
+    float: left;
+    font-family: fontFarm;
+    font-size: 60px;
+    margin-left: 10px;
+    padding-left: 40px;
+}
+
+.fonteVerde{
+    color: rgb(36, 148, 1);
+    font-family: fontFarm;
+    font-size: 60px;
+}
+
+header nav{
+    float: right;
+
+    
+}
+
+header a{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: fontFarm;
+    
+}
+
+header a:hover{
+   
+    transition: delay 1px;;
+    color:rgb(36, 148, 1);
+    background-color: rgba(255, 255, 255, 0.4);
+   
+}
+/* banner */
+
+.banner {
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.banner h1{
+    font-size: 100px;
+    color: white;
+    font-family: fontFarm;
+    margin-top: 30px;
+}
+
+.banner a{
+    color: white;
+    font-size: 20px;
+    background-color: rgb(36, 148, 1) ;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 80px;
+    display: inline-block;
+}
+/* fazenda */
+
+.fazenda{
+    text-align: center;
+    
+}
+.fazenda  > img{
+    display: block;
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 250px;
+}
+
+.fazenda figure{
+    display: inline-block;
+    margin-top: 5px;
+    padding: 50px;
+
+}
+
+/* segmentos */
+
+
+.segmentos{
+    background-color: rgb(223, 223, 223);
+    overflow: auto;
+}
+
+.segmentos div{
+    width: 49%;
+    float: right;
+}
+.segmentos > img{
+    width:49% ;
+    float: left;
+}
+
+.segmentos figure{
+    display: inline-block;
+    width: 310px;
+    height: 100px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+.segmentos figcaption{
+    margin: 20px;
+    margin-top: 5px;
+}
+
+.segmentos p{
+    text-align: justify;
+    line-height: 20px;
+    text-indent: 20px;
+}
+
+.footer{
+    overflow: auto;
+    background-color: black;
+    margin-top:5px;
+
+    
+
+}
+.footer p {
+    text-align: center;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.6);
+
+    
+}
+
+.footer h3{
+    color: rgb(53, 53, 53);
+    font-size: 24px;
+  padding: 20px;    ;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.forms{
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 1);
+    width: 600px;
+    display: grid;
+    margin: -15px auto;
+    padding: 20px;
+    border-radius: 0px 0px 5px 5px;
+
+    
+}
+
+form{
+    padding-top: 15px;
+    border-radius: 0px 5px 5px 0px;
+}
+input{
+    border-radius: 5px;
+}
+
+
+iframe{
+
+    width: 600px;
+  
+   text-align: center;
+   margin: 70px 0px 0px 460px;
+   
+}
+
+footer i{
+    float: right;
+    margin-left: 20px;
+}
+
+
