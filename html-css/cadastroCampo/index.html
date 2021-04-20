@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootsrtap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Cursos</title>
+</head>
+
+<body>
+    <!-- topo -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- logo  -->
+                <a class="navbar-brand" href="#">BR Cursos</a>
+                <!-- botão mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- conteudo da Navbar -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner principal -->
+    <main>
+
+        <!-- banner -->
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagens/fundo1.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/fundo2.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/fundo3.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- cursos -->
+        <section class="container cursos">
+
+            <div class="row">
+                <div class="col-12">
+                    <h1>Conheça nossos cursos</h1>
+                </div>
+
+
+                <div class="col-6 col-md-4 ">
+                    <img src="imagens/curso1.jpeg" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#modalCurso">
+                    <p>Curso 1</p>
+                </div>
+
+
+
+                <div class="col-6 col-md-4">
+                    <img src="imagens/curso7.jpeg" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#modalCurso2">
+                    <p>Curso 2</p>
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="imagens/curso3.jpeg" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#modalCurso3">
+                    <p>Curso 3</p>
+                </div>
+                <div class="col-6 col-md-4 ">
+                    <img src="imagens/curso4.jpeg" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#modalCurso4">
+                    <P>Curso 4</P>
+                </div>
+                <div class="col-6 col-md-4 ">
+                    <img src="imagens/curso9.jpeg" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#modalCurso5">
+                    <p>Curso 5</p>
+                </div>
+                <div class="col-6 col-md-4 ">
+                    <img src="imagens/curso8.jpeg" class="img-fluid" data-bs-toggle="modal"
+                        data-bs-target="#modalCurso6">
+                    <p>Curso 6</p>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="container professores">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Professores</h1>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagens/professor1.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Marcelo</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagens/professor2.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Pedro</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagens/professor3.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Priscila</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagens/professor4.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Carla</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- Modal 1 -->
+    <div class="modal " id="modalCurso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Instrutores Qualificados</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row modalPopup">
+                        <div class="col-6">
+                            <img src="imagens/professor1.jpeg" class="img-fluid">
+                        </div>
+
+                        <div class="col-6">
+                            <h1>Conheça Nossos Professores</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Totam hic distinctio voluptates quia soluta laudantium natus vero quaerat modi
+                                voluptatum fuga dolore voluptate quae maxime repellat architecto,
+                                impedit quibusdam placeat!</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Modal 2 -->
+     <div class="modal " id="modalCurso2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eu uso Terno</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row modalPopup">
+                        <div class="col-6">
+                            <img src="imagens/professor7.jpeg" class="img-fluid">
+                        </div>
+
+                        <div class="col-6">
+                            <h1>Por que usar Terno</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Totam hic distinctio voluptates quia soluta laudantium natus vero quaerat modi
+                                voluptatum fuga dolore voluptate quae maxime repellat architecto,
+                                impedit quibusdam placeat!</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Modal 3 -->
+     <div class="modal " id="modalCurso3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Meu nome é Betina</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row modalPopup">
+                        <div class="col-6">
+                            <img src="imagens/professor3.jpeg" class="img-fluid">
+                        </div>
+
+                        <div class="col-6">
+                            <h1>Como eu consegui 1 Milhão aos 18 anos</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Totam hic distinctio voluptates quia soluta laudantium natus vero quaerat modi
+                                voluptatum fuga dolore voluptate quae maxime repellat architecto,
+                                impedit quibusdam placeat!</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Modal 4 -->
+     <div class="modal " id="modalCurso4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Formação Font End</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row modalPopup">
+                        <div class="col-6">
+                            <img src="imagens/professor4.jpeg" class="img-fluid">
+                        </div>
+
+                        <div class="col-6">
+                            <h1>Curso Apex</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Totam hic distinctio voluptates quia soluta laudantium natus vero quaerat modi
+                                voluptatum fuga dolore voluptate quae maxime repellat architecto,
+                                impedit quibusdam placeat!</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Modal 5 -->
+     <div class="modal " id="modalCurso5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Proway</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row modalPopup">
+                        <div class="col-6">
+                            <img src="imagens/professor5.jpeg" class="img-fluid">
+                        </div>
+
+                        <div class="col-6">
+                            <h1>Por que cursar Java na Proway</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Totam hic distinctio voluptates quia soluta laudantium natus vero quaerat modi
+                                voluptatum fuga dolore voluptate quae maxime repellat architecto,
+                                impedit quibusdam placeat!</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Modal 6 -->
+     <div class="modal " id="modalCurso6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Acabe com o Stress</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row modalPopup">
+                        <div class="col-6">
+                            <img src="imagens/professor6.jpeg" class="img-fluid">
+                        </div>
+
+                        <div class="col-6">
+                            <h1>Como relaxar </h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Totam hic distinctio voluptates quia soluta laudantium natus vero quaerat modi
+                                voluptatum fuga dolore voluptate quae maxime repellat architecto,
+                                impedit quibusdam placeat!</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Developed By Bruno - 2021</p>
+
+    </footer>
+</body>
+
+</html>
